@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de Moyenne</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul de la Moyenne</h1>
+        <form action="/calculer" method="POST">
+            <label>Note 1 :</label><input type="number" name="note1" step="0.01" required>
+            <label>Note 2 :</label><input type="number" name="note2" step="0.01" required>
+            <label>Note 3 :</label><input type="number" name="note3" step="0.01" required>
+            <label>Note 4 :</label><input type="number" name="note4" step="0.01" required>
+            <label>Note 5 :</label><input type="number" name="note5" step="0.01" required>
+            <button type="submit">Calculer</button>
+        </form>
+    </div>
+</body>
+</html>
